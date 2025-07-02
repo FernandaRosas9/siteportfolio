@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fernanda Rosas</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <nav id="navbar"> 
+        <header><img src="logo.png" alt="Logo-Fernanda-Rosas" width="500"></header>
+          <ul class="nav-list">
+            <li><a class="nav-link" href="#Artes">Artes</a></li>
+            <li><a class="nav-link" href="#Comissões">Comissões</a></li>
+            <li><a class="nav-link" href="#Contato">Contato</a></li>
+          <li><button id="darkModeToggle" class="dark-mode-toggle">Mudar Tema</button></li>
+      </ul>
+        </nav>
+
+    <main>
+      <section class="Artes" id="Artes">
+        <header>Artes</header>
+        <div class="container-img" id="container-img">
+        <a href="https://ibb.co/B5fSbqhc" target="_blank"><img src="https://i.ibb.co/S469bRk5/z1.png" alt="ilustração 1" border="0"></a>
+        <a href="https://ibb.co/CK2ZGvtq" target="_blank"><img src="https://i.ibb.co/TMLS3RTZ/z2.png" alt="ilustração 2" border="0"></a>
+        <a href="https://ibb.co/VcBH6vyf" target="_blank"><img src="https://i.ibb.co/nNk3pD2x/z3.png" alt="ilustração 3" border="0"></a>
+        <a href="https://ibb.co/XZB8ZzYq" target="_blank"><img src="https://i.ibb.co/HDvdDrhj/z4.png" alt="ilustração 4" border="0"></a>
+        <a href="https://ibb.co/yncV4MX8" target="_blank"><img src="https://i.ibb.co/JRwC3bKz/z5.png" alt="ilustração 5" border="0"></a>
+        <a href="https://ibb.co/5xSfNyFk" target="_blank"><img src="https://i.ibb.co/x8BRp0HY/z6.png" alt="ilustração 6" border="0"></a>
+        <a href="https://ibb.co/d4N3ySRw" target="_blank"><img src="https://i.ibb.co/b54ynxkM/neeko.png" alt="ilustração 7" border="0"></a>
+        <a href="https://ibb.co/fzd0xng6" target="_blank"><img src="https://i.ibb.co/tTpCJxGj/79293803-p0-master1200.jpg" alt="ilustração 8" border="0"></a>
+        <a href="https://ibb.co/sdkBCvBP" target="_blank"><img src="https://i.ibb.co/ZptZS6ZJ/abigail.png" alt="ilustração 9" border="0"></a>
+        <a href="https://ibb.co/1f8b9ZZC" target="_blank"><img src="https://i.ibb.co/8D6XjMMy/kyomi2.png" alt="ilustração 10" border="0"></a>
+      </div>
+        </section>
+      </section>
+
+      <section class="Comissões" id="Comissões">
+        <header>Comissões</header>
+        <table class="table">
+          <tr>
+            <th>  </th>
+            <th>Valores</th>
+          </tr>
+          <tr>
+            <td>Sketch</td>
+            <td class="preços">R$ 25,00</td>
+          </tr>
+          <tr>
+            <td>Personagem Simples</td>
+            <td class="preços">R$ 50,00</td>
+          </tr>
+          <tr>
+            <td>Personagem Detalhado</td>
+            <td class="preços">R$ 100,00</td>
+          </tr>
+          <tr>
+            <td>Personagem adicional</td>
+            <td class="preços">R$ 25,00</td>
+        </table>
+      </section>
+
+      <section id="Contato" class="Contato">
+        <header>Contato</header>
+        <a href="https://twitter.com/catwitchie/" target="_blank">
+        <img src="icons8-twitter-50.png" alt="Twitter">
+        </a>
+        <a href="https://instagram.com/fer.rosas9/" target="_blank">
+          <img src="transferir.png" alt="Instagram">
+        </a>
+        <p>Email: ninefisr@gmail.com </p>
+        <p>Discord: catwitch</p>
+      </section>
+    </main>
+    <script>
+      const darkModeToggle = document.getElementById('darkModeToggle'); // ID correto
+  
+      const body = document.body;
+  
+      // Checa a preferência do usuário no localStorage ou no sistema operacional
+      const currentTheme = localStorage.getItem('theme');
+      if (currentTheme) {
+          body.classList.add(currentTheme);
+      } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          // Se o navegador preferir dark mode e não houver preferência salva, ativamos o dark mode
+          body.classList.add('dark-mode');
+      }
+  
+      darkModeToggle.addEventListener('click', () => {
+          body.classList.toggle('dark-mode'); // Alterna a classe 'dark-mode'
+  
+          // Salva a preferência do usuário no localStorage
+          if (body.classList.contains('dark-mode')) {
+              localStorage.setItem('theme', 'dark-mode');
+          } else {
+              localStorage.setItem('theme', 'light-mode');
+          }
+      });
+  </script>
+    </body>
+</html>
