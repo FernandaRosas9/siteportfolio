@@ -1,12 +1,8 @@
-Com certeza! Esse parece ser um ótimo portfólio de arte.
-
-Com base na estrutura do seu código HTML, criei uma descrição de README que destaca os pontos principais do site de Fernanda Rosas.
-
-Markdown
 
 # 🎨 Portfólio de Arte Digital | Fernanda Rosas
 
 Este repositório contém o código-fonte do portfólio pessoal da artista **Fernanda Rosas**. O site é uma vitrine simples e elegante para exibir a arte da artista, detalhar as opções de comissão e fornecer informações de contato.
+visite o site em: https://siteportfolio-henna.vercel.app/
 
 ## ✨ Visão Geral do Site
 
@@ -61,3 +57,4 @@ Você só precisa de um navegador web para visualizar este portfólio.
 * **Artista:** [Fernanda Rosas](https://twitter.com/catwitchie/)
 * **Email:** ninefisr@gmail.com
 * **Discord:** catwitch
+
